@@ -1,0 +1,17 @@
+{
+  "name": "testing-railway-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "api",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w api\" \"npm run dev -w client\"",
+    "build": "npm run build -w api && npm run build -w client",
+    "start": "concurrently \"npm run start -w api\" \"npm run start -w client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
