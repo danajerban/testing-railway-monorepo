@@ -4,7 +4,7 @@ This is a monorepo containing a NestJS API and a Next.js client application.
 
 ## Getting Started
 
-1. Install dependencies:
+1. Install dependencies (on each directory):
 
    ```
    npm install
@@ -29,7 +29,7 @@ This is a monorepo containing a NestJS API and a Next.js client application.
 
 ## Docker
 
-To run the applications using Docker:
+To run the applications using Docker (all containers up except the db for now):
 
 1. Build the Docker images:
 
